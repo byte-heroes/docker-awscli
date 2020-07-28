@@ -8,4 +8,4 @@ RUN apt-get update && apt-get install -y jq software-properties-common \
 	&& chmod +x /usr/local/bin/ecs-cli \
 	&& add-apt-repository "deb http://ppa.launchpad.net/ansible/ansible/ubuntu trusty main" \
 	&& apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 93C4A3FD7BB9C367 \
-	&& apt-get update && apt-get install -y ansible
+	&& apt-get update && apt-get install -y ansible && apt-get install -y x11-common
